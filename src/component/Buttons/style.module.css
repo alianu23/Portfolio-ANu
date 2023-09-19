@@ -1,0 +1,20 @@
+.buttonai {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  color: #797a7c;
+  margin-top: 10px;
+}
+.buttonai:hover {
+  font-weight: 600;
+  color: blue;
+}
+
+.jjj {
+  margin-left: 5px;
+  color: black;
+  margin-top: 5px;
+}
+.jjj:hover {
+  color: blue;
+}

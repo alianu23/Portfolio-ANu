@@ -1,0 +1,42 @@
+.logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+  color: gray;
+  cursor: pointer;
+}
+.logo1 {
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+}
+.logo2 {
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+}
+.logo3 {
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+}
+.logo4 {
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+}
+.logo1:hover {
+  color: #0a82ed;
+}
+.logo2:hover {
+  color: #cc245f;
+}
+.logo3:hover {
+  color: #9146ff;
+}
+.logo4:hover {
+  color: #0a66c2;
+}
