@@ -24,7 +24,7 @@ export default function Project() {
           <h1 style={{ fontSize: 48 }}>PROJECT</h1>
           <div style={{ width: 40, height: 3, backgroundColor: "black" }}></div>
         </div>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", margin: "0 45px" }}>
           {Projectd.map((el) => (
             <ProjectData data={el} key={el.id} />
           ))}

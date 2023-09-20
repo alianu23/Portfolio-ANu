@@ -8,7 +8,7 @@ export const ProjectData = (props) => {
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "center",
-        width: 700,
+        width: 500,
         marginTop: 50,
       }}
     >
