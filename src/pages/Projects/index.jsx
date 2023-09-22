@@ -1,6 +1,6 @@
 import React from "react";
 import { Projectd } from "@/data";
-import { ProjectData } from "./ProjectData";
+import { ProjectData } from "../../components/ProjectData";
 import { motion } from "framer-motion";
 
 const spring = {

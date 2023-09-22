@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./style.module.css";
 import { Data } from "@/data";
-import { Skills } from "./Skills";
-import { Button1 } from "@/component/Buttons";
+import { Skills } from "../../components/Skills";
+import { Button1 } from "@/components/Buttons";
 import { motion } from "framer-motion";
 
 function AboutPage() {

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./style.module.css";
-import Button from "@/component/Buttons";
-import Footer from "@/component/Footer";
+import Button from "@/components/Buttons";
+import Footer from "@/components/Footer";
 import img from "@/data/zurag.png";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
