@@ -17,7 +17,7 @@ export default function Contact() {
             margin: 40,
             alignItems: "center",
             justifyContent: "space-between",
-            width: "90%",
+            width: "100%",
           }}
         >
           <section
@@ -34,7 +34,7 @@ export default function Contact() {
             </h4>
           </section>
           <img
-            style={{ width: 700, Height: 500 }}
+            style={{ width: 500, Height: 350 }}
             src="https://assets.maccarianagency.com/svg/illustrations/drawkit-illustration6.svg"
             alt=""
           />
