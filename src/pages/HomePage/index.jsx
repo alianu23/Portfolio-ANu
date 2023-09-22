@@ -12,7 +12,7 @@ import Contact from "../Contact";
 function Home() {
   return (
     <>
-      <div style={{ margin: "0 50px" }}>
+      <div className="mt-0 mx-12 ">
         <div className={styles.contain}>
           <motion.div
             initial={{ x: -400, opacity: 0 }}
@@ -20,10 +20,10 @@ function Home() {
             transition={{ duration: 1 }}
           >
             <section className={styles.Intro}>
-              <h3 style={{ fontSize: 32, color: "silver" }}>Hello</h3>
+              <h3 className="text-3xl text-slate-500 sm:text-base ">Hello</h3>
               <h1 className={styles.myName}>My name is Anudari Oyunbat</h1>
-              <div className={styles.rrr}>
-                <div style={{ display: "flex" }}>
+              <div className="flex flex-col items-center content-center">
+                <div className="flex">
                   <h4 className={styles.about}>I'm </h4>
                   <h4 className={styles.maj}>
                     <Typewriter
@@ -52,7 +52,7 @@ function Home() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <img style={{ width: 700, height: 500 }} src={img.src} alt="" />
+            <img className={styles.img} src={img.src} alt="" />
           </motion.div>
         </div>
         <AboutPage />

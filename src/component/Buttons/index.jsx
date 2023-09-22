@@ -7,10 +7,7 @@ function Buttons() {
   return (
     <div className={styles.buttonai}>
       <Link href="./Aboutpage">
-        <Button
-          style={{ backgroundColor: "#027ce7", padding: "10px 15px" }}
-          variant="contained"
-        >
+        <Button className={styles.buttonI} variant="contained">
           See more About me
         </Button>
       </Link>

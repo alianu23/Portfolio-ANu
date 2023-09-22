@@ -10,7 +10,7 @@
 }
 .hbutton {
   height: 100%;
-  width: 15%;
+  width: 100%;
   margin: 25px;
   padding: 5px;
   border: none;
@@ -53,4 +53,30 @@
 .portfolio {
   font-size: 32px;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .hbutton {
+    font-size: 16px;
+    font-weight: 200;
+    border-radius: 8px;
+    width: 100%;
+  }
+  .hbutton:hover {
+    font-weight: 300;
+  }
+
+  .headerP {
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  .headerP:hover {
+    font-weight: 300;
+  }
+  .portfolio {
+    font-size: 16px;
+    font-weight: 400;
+  }
 }

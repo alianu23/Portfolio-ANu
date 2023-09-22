@@ -12,16 +12,7 @@ function AboutPage() {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          width: "95%",
-          justifyContent: "center",
-          alignItems: "center",
-          marginBottom: 30,
-        }}
-      >
+      <div className="flex flex-col w-auto content-center items-center mb-7">
         <div
           style={{
             display: "flex",

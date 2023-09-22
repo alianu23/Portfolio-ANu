@@ -20,7 +20,8 @@ function ModeToggle() {
 
   return (
     <Button
-      style={{ fontSize: 20, padding: 8 }}
+      style={{ fontSize: 20, padding: 1 }}
+      className=""
       variant="soft"
       color="neutral"
       onClick={() => {
