@@ -20,9 +20,7 @@ function Home() {
             transition={{ duration: 1 }}
           >
             <section className={styles.Intro}>
-              <h3 className="text-[25px] text-slate-500 sm:text-base ">
-                Hello
-              </h3>
+              <h3 className="text-3xl  text-slate-500 ">Hello</h3>
               <h1 className={styles.myName}>My name is Anudari Oyunbat</h1>
 
               <div className="flex">

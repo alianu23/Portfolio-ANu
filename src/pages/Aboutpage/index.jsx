@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./style.module.css";
 import { Data } from "@/data";
 import { Skills } from "../../components/Skills";
 import { Button1 } from "@/components/Buttons";
@@ -24,25 +23,27 @@ function AboutPage() {
             <Skills data={el} key={el.id} />
           ))}
         </div>
-        <div className={styles.ope}>
-          <section className={styles.Intro}>
-            <h1 className={styles.myName}>I'm Anudari Oyunbat</h1>
-            <h4 className={styles.whatcan}>
-              I'm frontend developer, UX architect and Javascript engineer,
-              Photochromic Lens enthusiast, practicing minimalist, and Pop music
-              & Jazz lover in search of flow.
-            </h4>
-            <h4 className={styles.whatcan}>
-              Working with my hands to make magic happen on the internet. View
-              my Projects. Articles, Resumé, ContactMe ,or sendme an email at
-              hellocodewonders@gmail.com
-            </h4>
+        <div className="flex content-around mt-12">
+          <section className="flex flex-col w-3/">
+            <h1 className="text-5xl">I'm Anudari Oyunbat</h1>
+            <div className="flex flex-col w-78">
+              <h4 className="flex-wrap mt-10 mr-10">
+                I'm frontend developer, UX architect and Javascript engineer,
+                Photochromic Lens enthusiast, practicing minimalist, and Pop
+                music & Jazz lover in search of flow.
+              </h4>
+              <h4 className="flex-wrap mr-10">
+                Working with my hands to make magic happen on the internet. View
+                my Projects. Articles, Resumé, ContactMe ,or sendme an email at
+                hellocodewonders@gmail.com
+              </h4>
+            </div>
             <div style={{ marginTop: 30 }}>
               <Button1 />
             </div>
           </section>
           <img
-            className={styles.img}
+            className="rounded-3xl"
             src="https://media.istockphoto.com/id/1416048929/photo/woman-working-on-laptop-online-checking-emails-and-planning-on-the-internet-while-sitting-in.webp?b=1&s=170667a&w=0&k=20&c=XCzSqjgn02etddi527fy6Q9Dz_MtPYKKc-MMbhS3kK0="
           />
         </div>

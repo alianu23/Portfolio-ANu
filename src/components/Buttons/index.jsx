@@ -19,8 +19,8 @@ export const Button1 = () => {
   return (
     <Link href="./Projects">
       <Button
-        style={{ backgroundColor: "#027ce7", padding: "10px 15px" }}
-        variant="contained"
+        className=" px-4 py-2.5 "
+        variant="contained bg-blue-500 text-white"
       >
         Check Projects
       </Button>
