@@ -69,21 +69,6 @@ export const hardSkills = [
 
 export const Projectd = [
   {
-    img: img2.src,
-    name: "Blog",
-    url: "https://blog-hazel-xi-34.vercel.app/",
-  },
-  {
-    img: img3.src,
-    name: "Menu",
-    url: "https://menu-example-sooty.vercel.app/",
-  },
-  {
-    img: todo.src,
-    name: "Todo-list",
-    url: "https://todo-list-alpha-rose-80.vercel.app/",
-  },
-  {
     img: recruit.src,
     name: "HRMS-Recruit-Page",
     url: "https://intern-hrms-dashboard-prod-pinecone-studio.vercel.app/recruiting",
@@ -112,5 +97,20 @@ export const Projectd = [
     img: ciClient.src,
     name: "Cinema-Client",
     url: "https://cinema-app-client-front.vercel.app/",
+  },
+  {
+    img: img2.src,
+    name: "Blog",
+    url: "https://blog-hazel-xi-34.vercel.app/",
+  },
+  {
+    img: img3.src,
+    name: "Menu",
+    url: "https://menu-example-sooty.vercel.app/",
+  },
+  {
+    img: todo.src,
+    name: "Todo-list",
+    url: "https://todo-list-alpha-rose-80.vercel.app/",
   },
 ];
