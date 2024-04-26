@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./style.module.css";
 import Button from "@/components/Buttons";
 import Footer from "@/components/Footer";
-import img from "@/data/zurag.png";
+import img from "@/data/zurag/pic1.jpg";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import AboutPage from "../Aboutpage";
@@ -12,7 +12,7 @@ import Contact from "../Contact";
 function Home() {
   return (
     <>
-      <div className="mt-0 mx-12 ">
+      <div className="mt-0 mx-12 flex flex-col gap-48">
         <div className={styles.contain}>
           <motion.div
             initial={{ x: -400, opacity: 0 }}
@@ -54,9 +54,15 @@ function Home() {
             <img className={styles.img} src={img.src} alt="" />
           </motion.div>
         </div>
-        <AboutPage />
-        <Project />
-        <Contact />
+        <div>
+          <AboutPage />
+        </div>
+        <div>
+          <Project />
+        </div>
+        <div>
+          <Contact />
+        </div>
       </div>
     </>
   );

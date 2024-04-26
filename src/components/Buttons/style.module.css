@@ -1,8 +1,6 @@
 .buttonai {
-  display: flex;
-  flex-direction: row;
   cursor: pointer;
-  color: #797a7c;
+
   margin-top: 10px;
 }
 .buttonai:hover {
@@ -16,7 +14,9 @@
   margin-top: 5px;
 }
 .buttonI {
-  background-color: #027ce7;
+  color: white;
+  background-color: #797a7c;
+  border-radius: 10px;
   padding: 10px 15px;
   font-size: 16px;
 }

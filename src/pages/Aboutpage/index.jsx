@@ -1,10 +1,12 @@
-import React from "react";
-import { Data } from "@/data";
+import React, { useState } from "react";
+import { softSkills, hardSkills } from "@/data";
 import { Skills } from "../../components/Skills";
+import img from "@/data/zurag/pic2.jpg";
 import { Button1 } from "@/components/Buttons";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 
 function AboutPage() {
+  const [show, setShow] = useState(false);
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -12,18 +14,7 @@ function AboutPage() {
       transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col w-auto content-center items-center mb-7">
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-          }}
-        >
-          {Data.map((el) => (
-            <Skills data={el} key={el.id} />
-          ))}
-        </div>
-        <div className="flex content-around mt-12">
+        <div className="flex items-center mt-12 mx-16">
           <section className="flex flex-col w-3/">
             <h1 className="text-5xl">I'm Anudari Oyunbat</h1>
             <div className="flex flex-col w-78">
@@ -42,11 +33,63 @@ function AboutPage() {
               <Button1 />
             </div>
           </section>
-          <img
-            className="rounded-3xl"
-            src="https://media.istockphoto.com/id/1416048929/photo/woman-working-on-laptop-online-checking-emails-and-planning-on-the-internet-while-sitting-in.webp?b=1&s=170667a&w=0&k=20&c=XCzSqjgn02etddi527fy6Q9Dz_MtPYKKc-MMbhS3kK0="
-          />
+          <img className="rounded-3xl w-[400px] h-[500px]" src={img.src} />
         </div>
+      </div>
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex gap-10">
+          <button
+            onClick={() => {
+              setShow(true);
+            }}
+            className={`text-lg border-r-indigo-200  border-r-1 border-solid ${
+              show === true
+                ? "text-blue-500 border-b-[1px] border-blue-500"
+                : "hover:text-blue-500"
+            }`}
+          >
+            My Soft skills
+          </button>
+          <button
+            onClick={() => {
+              setShow(false);
+            }}
+            className={`text-lg border-r-indigo-200  border-r-1 border-solid ${
+              show === false
+                ? "text-blue-500 border-b-[1px] border-blue-500"
+                : "hover:text-blue-500"
+            }`}
+          >
+            My Hard Skills
+          </button>
+        </div>
+        {show === true ? (
+          <div
+            id="1"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
+          >
+            {softSkills.map((el, i) => (
+              <Skills data={el} key={i} />
+            ))}
+          </div>
+        ) : (
+          <div
+            id="1"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
+          >
+            {hardSkills.map((el, i) => (
+              <Skills data={el} key={i} />
+            ))}
+          </div>
+        )}
       </div>
     </motion.div>
   );

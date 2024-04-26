@@ -1,19 +1,17 @@
+import Link from "next/link";
 import React from "react";
 
 export const ProjectData = (props) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        alignItems: "center",
-        width: 500,
-        marginTop: 50,
-      }}
-    >
-      <img style={{ heigh: 300, width: 250 }} src={props.data.img} alt="" />
-      <p>{props.data.name}</p>
-    </div>
+    <Link href={props.data.url}>
+      <div className="flex flex-col gap-3 items-center mt-7 hover:bg-black hover:opacity-50 bg-slate-900 rounded-md">
+        <img
+          className="h-[250px] w-[250px] rounded-t-md"
+          src={props.data.img}
+          alt="project-img"
+        />
+        <p className="text-slate-100 pb-7">{props.data.name}</p>
+      </div>
+    </Link>
   );
 };

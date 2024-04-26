@@ -19,8 +19,8 @@ export const Button1 = () => {
   return (
     <Link href="./Projects">
       <Button
-        className=" px-4 py-2.5 "
-        variant="contained bg-blue-500 text-white"
+        className=" px-4 py-2.5 bg-slate-500 hover:bg-slate-400"
+        variant="contained  text-white"
       >
         Check Projects
       </Button>

@@ -1,39 +1,19 @@
 import React from "react";
+import { usePathname } from "next/navigation";
 import styles from "./style.module.css";
 import Link from "next/link";
-import { CssVarsProvider, useColorScheme } from "@mui/joy/styles";
-import Button from "@mui/joy/Button";
+import { CssVarsProvider } from "@mui/joy/styles";
 import { motion } from "framer-motion";
 
-function ModeToggle() {
-  const { mode, setMode } = useColorScheme();
-  const [mounted, setMounted] = React.useState(false);
-
-  // necessary for server-side rendering
-  // because mode is undefined on the server
-  React.useEffect(() => {
-    setMounted(true);
-  }, []);
-  if (!mounted) {
-    return null;
-  }
-
-  return (
-    <Button
-      style={{ fontSize: 20, padding: 1 }}
-      className=""
-      variant="soft"
-      color="neutral"
-      onClick={() => {
-        setMode(mode === "light" ? "dark" : "light");
-      }}
-    >
-      {mode === "light" ? "Turn dark" : "Turn light"}
-    </Button>
-  );
-}
-
 function Header() {
+  const navigations = [
+    { name: "Home", path: "./HomePage" },
+    { name: "About me", path: "./Aboutpage" },
+    { name: "Projects", path: "./Projects" },
+    { name: "Contact", path: "./Contact" },
+  ];
+
+  const isActive = usePathname();
   return (
     <CssVarsProvider>
       <header className={styles.header}>
@@ -43,9 +23,8 @@ function Header() {
         >
           <Link href="./HomePage">
             <h1 className={styles.portfolio}>Portfolio</h1>{" "}
-            <p style={{ width: 60, height: 2, backgroundColor: "black" }}> </p>
+            {/* <p style={{ width: 60, height: 2, backgroundColor: "black" }}> </p> */}
           </Link>{" "}
-          <ModeToggle />
         </motion.div>
         <div className={styles.bigcontain}>
           <motion.div
@@ -53,18 +32,19 @@ function Header() {
             animate={{ x: 0, opacity: 1, scale: 1 }}
           >
             <div className={styles.inside}>
-              <Link className={styles.headerP} href="./HomePage">
-                Home
-              </Link>
-              <Link className={styles.headerP} href="./Aboutpage">
-                About
-              </Link>
-              <Link className={styles.headerP} href="./Projects">
-                Projects
-              </Link>
-              <Link className={styles.hbutton} href="./Contact">
-                Contact
-              </Link>
+              {navigations.map((navigation, i) => (
+                <Link
+                  className={`transition-all duration-75 text-lg ${
+                    isActive == navigation.path
+                      ? "font-semibold"
+                      : "hover:font-semibold "
+                  }`}
+                  key={i}
+                  href={navigation.path}
+                >
+                  {navigation.name}
+                </Link>
+              ))}
             </div>
           </motion.div>
         </div>

@@ -12,22 +12,16 @@ export default function Project() {
   return (
     <>
       <motion.div transition={spring} animate={{ scale: 1.2 }}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: 80,
-          }}
-        >
-          <h1 style={{ fontSize: 48 }}>PROJECT</h1>
-          <div style={{ width: 40, height: 3, backgroundColor: "black" }}></div>
-        </div>
-        <div style={{ display: "flex", margin: "0 45px" }}>
-          {Projectd.map((el) => (
-            <ProjectData data={el} key={el.id} />
-          ))}
+        <div className="flex flex-col container mx-auto items-center justify-center my-32">
+          <div className=" flex flex-col items-center justify-center gap-2">
+            <h2 className="text-2xl ">MY PROJECTS</h2>
+            <div className="w-28 h-[1px] bg-black"></div>
+          </div>
+          <div className="grid grid-cols-3 gap-10 mx-16">
+            {Projectd.map((el, i) => (
+              <ProjectData data={el} key={i} />
+            ))}
+          </div>
         </div>
       </motion.div>
     </>

@@ -27,10 +27,10 @@ export default function Contact() {
               justifyContent: "center",
             }}
           >
-            <h1 style={{ fontSize: 90 }}>Contact Us</h1>
+            <h1 style={{ fontSize: 90 }}>Contact Me</h1>
             <h4 style={{ fontSize: 25, color: "#556475", fontWeight: 300 }}>
-              We will make your product look modern and professional while
-              saving you precious time.
+              I will make your product look modern and professional while saving
+              you precious time.
             </h4>
           </section>
           <img

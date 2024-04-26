@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0px;
+  margin-inline: 50px;
+  margin-top: 10px;
+  border-bottom: 1px solid #eaecef;
 }
 .inside {
   display: flex;
