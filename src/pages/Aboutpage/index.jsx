@@ -19,14 +19,14 @@ function AboutPage() {
             <h1 className="text-5xl">I'm Anudari Oyunbat</h1>
             <div className="flex flex-col w-78">
               <h4 className="flex-wrap mt-10 mr-10">
-                I'm frontend developer, UX architect and Javascript engineer,
-                Photochromic Lens enthusiast, practicing minimalist, and Pop
-                music & Jazz lover in search of flow.
+                I'm Full Stack developer, UI architect, Home Chef/hobby/,
+                practicing minimalist, Accountant, and R&B music & street dance
+                lover.
               </h4>
               <h4 className="flex-wrap mr-10">
                 Working with my hands to make magic happen on the internet. View
-                my Projects. Articles, Resumé, ContactMe ,or sendme an email at
-                hellocodewonders@gmail.com
+                my Projects, Resume, ContactMe ,or sendme an email at
+                anybat23@gmail.com
               </h4>
             </div>
             <div style={{ marginTop: 30 }}>
