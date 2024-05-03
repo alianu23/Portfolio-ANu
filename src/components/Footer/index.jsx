@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFacebook, BsInstagram, BsTwitch, BsLinkedin } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTwitch, BsGithub } from "react-icons/bs";
 import styles from "./style.module.css";
 import Link from "next/link";
 
@@ -18,9 +18,9 @@ function Footer() {
         {" "}
         <BsTwitch className={styles.logo3} />{" "}
       </Link>
-      <Link href="https://www.linkedin.com/in/any-oyunbat-380380289/">
+      <Link href="https://github.com/alianu23">
         {" "}
-        <BsLinkedin className={styles.logo4} />{" "}
+        <BsGithub className={styles.logo4} />{" "}
       </Link>
     </div>
   );

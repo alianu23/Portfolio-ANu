@@ -6,7 +6,7 @@ import { Button1 } from "@/components/Buttons";
 import { color, motion } from "framer-motion";
 
 function AboutPage() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -18,10 +18,14 @@ function AboutPage() {
           <section className="flex flex-col w-3/">
             <h1 className="text-5xl">I'm Anudari Oyunbat</h1>
             <div className="flex flex-col w-78">
-              <h4 className="flex-wrap mt-10 mr-10">
-                I'm Full Stack developer, UI architect, Home Chef/hobby/,
-                practicing minimalist, Accountant, and R&B music & street dance
-                lover.
+              <h4 className="flex-wrap mt-10 mr-16">
+                I'm Full Stack developer. As I navigate this exciting chapter of
+                my career, I am eager to embrace new challenges, seize
+                opportunities, and unlock the full potential of my capabilities
+                as a software engineer. With an open mind and a steadfast
+                resolve, I am ready to embark on this journey, confident in my
+                ability to shape the future and leave a lasting impact on the
+                world of technology.
               </h4>
               <h4 className="flex-wrap mr-10">
                 Working with my hands to make magic happen on the internet. View

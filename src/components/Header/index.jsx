@@ -7,13 +7,14 @@ import { motion } from "framer-motion";
 
 function Header() {
   const navigations = [
-    { name: "Home", path: "./HomePage" },
-    { name: "About me", path: "./Aboutpage" },
-    { name: "Projects", path: "./Projects" },
-    { name: "Contact", path: "./Contact" },
+    { name: "Home", path: "/HomePage" },
+    { name: "About me", path: "/Aboutpage" },
+    { name: "Projects", path: "/Projects" },
+    { name: "Contact", path: "/Contact" },
   ];
 
   const isActive = usePathname();
+
   return (
     <CssVarsProvider>
       <header className={styles.header}>
@@ -23,9 +24,9 @@ function Header() {
         >
           <Link href="./HomePage">
             <h1 className={styles.portfolio}>Portfolio</h1>{" "}
-            {/* <p style={{ width: 60, height: 2, backgroundColor: "black" }}> </p> */}
           </Link>{" "}
         </motion.div>
+
         <div className={styles.bigcontain}>
           <motion.div
             initial={{ x: 400, opacity: 0, scale: 0 }}
@@ -35,7 +36,7 @@ function Header() {
               {navigations.map((navigation, i) => (
                 <Link
                   className={`transition-all duration-75 text-lg ${
-                    isActive == navigation.path
+                    isActive === navigation.path
                       ? "font-semibold"
                       : "hover:font-semibold "
                   }`}

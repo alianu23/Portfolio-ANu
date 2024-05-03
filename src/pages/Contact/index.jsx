@@ -150,10 +150,11 @@ export default function Contact() {
             >
               <h1 style={{ fontSize: 32 }}>Contact detail</h1>
               <p>
-                Rather than worrying about switching offices every couple years,
-                you can instead stay in the same location and grow-up from your
-                shared coworking space to an office that takes up an entire
-                floor.
+                Please provide me with your contact information including your
+                name, email, and phone number. Additionally, if you're
+                interested in discussing further details about your idea,
+                including its title and additional information, I would be more
+                than happy to arrange a call back at your convenience.
               </p>
             </div>
           </div>

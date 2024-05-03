@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import AboutPage from "../Aboutpage";
 import Project from "../Projects";
 import Contact from "../Contact";
+import Link from "next/link";
 
 function Home() {
   return (
@@ -28,7 +29,7 @@ function Home() {
                 <h4 className={styles.maj}>
                   <Typewriter
                     words={[
-                      "a UI/UX Designer",
+                      "an Innovator",
                       "a Backend developer",
                       "a Frontend developer",
                       "a Full stack developer",
@@ -43,7 +44,15 @@ function Home() {
                 </h4>
               </div>
               <Footer />
-              <Button />
+              <Button label={"See more about me"} />
+              <a
+                className="px-4 py-2.5 bg-slate-500 hover:bg-slate-400 text-white my-3 rounded-md"
+                href="/files/Anudari_cv.pdf"
+                download="Anudari_cv.pdf"
+              >
+                {" "}
+                Download My CV{" "}
+              </a>
             </section>
           </motion.div>
           <motion.div

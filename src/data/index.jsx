@@ -11,6 +11,9 @@ import mongo from "./zurag/hardSkill/mongodb.svg";
 import mono from "./zurag/hardSkill/monorepo.png";
 import react from "./zurag/hardSkill/react.png";
 import lib from "./zurag/hardSkill/library.png";
+import express from "./zurag/hardSkill/express.png";
+import node from "./zurag/hardSkill/node.png";
+import ts from "./zurag/hardSkill/ts.png";
 import ciAdmin from "./projects/cinema-admin.png";
 import ciClient from "./projects/cinema-client.png";
 import foAdmin from "./projects/food-admin.png";
@@ -43,27 +46,42 @@ export const hardSkills = [
   {
     img: mongo.src,
     name: "MongoDb",
-    desc: "Fast load times and lag free interaction, my highest priority.",
+    desc: "BackEnd",
   },
   {
     img: react.src,
     name: "ReactJS",
-    desc: "My layouts will work on any device, big or small.",
+    desc: "Front",
   },
   {
     img: mono.src,
     name: "Monorepo",
-    desc: "Strong preference for easy to use, intuitive UX/UI.",
+    desc: "NX Management",
   },
   {
     img: graph.src,
     name: "GraphQl",
-    desc: "Websites don't have to be static, I love making pages come to life.",
+    desc: "Apollo server",
   },
   {
     img: lib.src,
-    name: "Front-Libraries",
-    desc: "Websites don't have to be static, I love making pages come to life.",
+    name: "Library and Frameworks",
+    desc: "MUI, Bootstrap, TailwindCSS .,",
+  },
+  {
+    img: express.src,
+    name: "ExpressJS",
+    desc: "Backend JS Server",
+  },
+  {
+    img: node.src,
+    name: "NodeJS",
+    desc: "open-source ",
+  },
+  {
+    img: ts.src,
+    name: "Typescript",
+    desc: "Programming language",
   },
 ];
 

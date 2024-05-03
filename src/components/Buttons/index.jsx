@@ -3,12 +3,15 @@ import styles from "./style.module.css";
 import Link from "next/link";
 import Button from "@mui/material/Button";
 
-function Buttons() {
+function Buttons({ label }) {
   return (
-    <div className={styles.buttonai}>
+    <div>
       <Link href="./Aboutpage">
-        <Button className={styles.buttonI} variant="contained">
-          See more About me
+        <Button
+          className="px-4 py-2.5 bg-slate-500 hover:bg-slate-400"
+          variant="contained"
+        >
+          {label}
         </Button>
       </Link>
     </div>
