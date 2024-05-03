@@ -13,7 +13,7 @@ import Link from "next/link";
 function Home() {
   return (
     <>
-      <div className="mt-0 mx-12 flex flex-col gap-48">
+      <div className="mt-0 lg:mx-12 flex flex-col gap-48">
         <div className={styles.contain}>
           <motion.div
             initial={{ x: -400, opacity: 0 }}

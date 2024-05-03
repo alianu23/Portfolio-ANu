@@ -17,7 +17,7 @@ export default function Project() {
             <h2 className="text-2xl ">MY PROJECTS</h2>
             <div className="w-28 h-[1px] bg-black"></div>
           </div>
-          <div className="grid grid-cols-3 gap-10 mx-16">
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 lg:mx-16 mx-1">
             {Projectd.map((el, i) => (
               <ProjectData data={el} key={i} />
             ))}

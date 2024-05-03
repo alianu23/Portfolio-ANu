@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { TextField } from "@mui/material";
+import { Stack, TextField } from "@mui/material";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
@@ -51,7 +51,7 @@ export default function Contact() {
             width: "100%",
           }}
         >
-          <div className="flex flex-row items-center justify-between mx-10 my-5">
+          <div className="flex lg:flex-row flex-col gap-2 items-center justify-between mx-10 my-5">
             <section
               style={{
                 display: "flex",
@@ -75,49 +75,70 @@ export default function Contact() {
           <div
             style={{
               display: "flex",
-              justifyConten: "space-between",
-              width: "90%",
-              margin: 50,
+              flexDirection: "column",
             }}
+            className="lg:m-12 m-2"
           >
-            <div style={{ display: "flex" }}>
+            <div>
+              <h1 className="text-[0px] lg:text-2xl">Contact detail</h1>
+              <p className="text-[0px] lg:text-base">
+                Please provide me with your contact information including your
+                name, email, and phone number. Additionally, if you're
+                interested in discussing further details about your idea,
+                including its title and additional information, I would be more
+                than happy to arrange a call back at your convenience.
+              </p>
+            </div>
+            <div style={{ display: "flex" }} className="flex-col">
               <div style={{ display: "flex", flexDirection: "column" }}>
-                <TextField
-                  style={{ marginTop: 10, marginRight: 10 }}
-                  id="outlined-basic"
-                  name="from_name"
-                  autoComplete="given-name"
-                  placeholder="Your Name"
-                  required
-                  label="Write your name"
-                  variant="outlined"
-                />
-                <TextField
-                  style={{ marginTop: 10, marginRight: 10 }}
-                  id="outlined-basic"
-                  label="Write your email"
-                  name="email"
-                  autoComplete="email"
-                  placeholder="Your Email"
-                  required
-                  variant="outlined"
-                />
-                <TextField
-                  style={{ marginTop: 10 }}
-                  id="filled-basic"
-                  label="Title"
-                  name="heading"
-                  required
-                  variant="filled"
-                />
-                <textarea
-                  placeholder="Write a Message"
-                  cols="30"
-                  rows="10"
-                  required
-                  name="message"
-                  className="border py-[14px] pr-[14px] pl-5 border-zinc-200 rounded"
-                ></textarea>
+                <Stack>
+                  <TextField
+                    className="lg:mt-2 lg:mr-2 mt-0 mr-0"
+                    id="outlined-basic"
+                    name="from_name"
+                    autoComplete="given-name"
+                    placeholder="Your Name"
+                    required
+                    label="Write your name"
+                    variant="outlined"
+                  />
+                  <TextField
+                    className="lg:mt-2 lg:mr-2 mt-0 mr-0"
+                    id="outlined-number"
+                    label="Phone Number"
+                    type="Number"
+                    name="phone"
+                    required
+                  />
+                  <TextField
+                    className="lg:mt-2 lg:mr-2 mt-0 mr-0"
+                    id="outlined-basic"
+                    label="Write your email"
+                    name="email"
+                    autoComplete="email"
+                    placeholder="Your Email"
+                    required
+                    variant="outlined"
+                  />
+                </Stack>
+                <Stack>
+                  <TextField
+                    className="lg:mt-2 lg:mr-2 mt-0 mr-0"
+                    id="filled-basic"
+                    label="Title"
+                    name="heading"
+                    required
+                    variant="filled"
+                  />
+                  <textarea
+                    placeholder="Write a Message"
+                    cols="30"
+                    rows="10"
+                    required
+                    name="message"
+                    className="border py-[14px] pr-[14px] pl-5 border-zinc-200 rounded"
+                  ></textarea>
+                </Stack>
                 <div>
                   <button
                     type="submit"
@@ -128,34 +149,6 @@ export default function Contact() {
                   </button>
                 </div>
               </div>
-              <TextField
-                style={{ marginTop: 10 }}
-                id="outlined-number"
-                label="Phone Number"
-                type="Number"
-                name="phone"
-                required
-                InputLabelProps={{
-                  shrink: true,
-                }}
-              />
-            </div>
-            <div
-              style={{
-                width: "50%",
-                marginLeft: 50,
-                borderLeft: "1px solid black",
-                paddingLeft: 20,
-              }}
-            >
-              <h1 style={{ fontSize: 32 }}>Contact detail</h1>
-              <p>
-                Please provide me with your contact information including your
-                name, email, and phone number. Additionally, if you're
-                interested in discussing further details about your idea,
-                including its title and additional information, I would be more
-                than happy to arrange a call back at your convenience.
-              </p>
             </div>
           </div>
         </form>

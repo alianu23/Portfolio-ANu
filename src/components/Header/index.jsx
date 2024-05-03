@@ -17,13 +17,13 @@ function Header() {
 
   return (
     <CssVarsProvider>
-      <header className={styles.header}>
+      <header className="mt-[10px] my-[50px] border-b-[1px] border-[#eaecef] flex lg:justify-between items-center justify-center">
         <motion.div
           initial={{ x: -400, opacity: 0, scale: 0 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
         >
           <Link href="./HomePage">
-            <h1 className={styles.portfolio}>Portfolio</h1>{" "}
+            <h1 className="text-2xl text-center w-full">Portfolio</h1>{" "}
           </Link>{" "}
         </motion.div>
 
@@ -32,10 +32,10 @@ function Header() {
             initial={{ x: 400, opacity: 0, scale: 0 }}
             animate={{ x: 0, opacity: 1, scale: 1 }}
           >
-            <div className={styles.inside}>
+            <div className="flex justify-between ">
               {navigations.map((navigation, i) => (
                 <Link
-                  className={`transition-all duration-75 text-lg ${
+                  className={`transition-all duration-75 lg:text-lg text-[0px] ${
                     isActive === navigation.path
                       ? "font-semibold"
                       : "hover:font-semibold "

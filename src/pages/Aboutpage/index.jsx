@@ -14,11 +14,11 @@ function AboutPage() {
       transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col w-auto content-center items-center mb-7">
-        <div className="flex items-center mt-12 mx-16">
-          <section className="flex flex-col w-3/">
+        <div className="flex items-center mt-12 lg:mx-16">
+          <section className="flex flex-col justify-center items-center lg:items-start">
             <h1 className="text-5xl">I'm Anudari Oyunbat</h1>
-            <div className="flex flex-col w-78">
-              <h4 className="flex-wrap mt-10 mr-16">
+            <div className="flex flex-col lg:w-78 w-full">
+              <h4 className="flex-wrap mt-10 lg:mr-16 ">
                 I'm Full Stack developer. As I navigate this exciting chapter of
                 my career, I am eager to embrace new challenges, seize
                 opportunities, and unlock the full potential of my capabilities
@@ -27,7 +27,7 @@ function AboutPage() {
                 ability to shape the future and leave a lasting impact on the
                 world of technology.
               </h4>
-              <h4 className="flex-wrap mr-10">
+              <h4 className="flex-wrap lg:mr-10">
                 Working with my hands to make magic happen on the internet. View
                 my Projects, Resume, ContactMe ,or sendme an email at
                 anybat23@gmail.com
@@ -37,7 +37,10 @@ function AboutPage() {
               <Button1 />
             </div>
           </section>
-          <img className="rounded-3xl w-[400px] h-[500px]" src={img.src} />
+          <img
+            className="rounded-3xl lg:w-[400px] lg:h-[500px] w-0 h-0"
+            src={img.src}
+          />
         </div>
       </div>
       <div className="flex flex-col justify-center items-center">
@@ -70,11 +73,7 @@ function AboutPage() {
         {show === true ? (
           <div
             id="1"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-            }}
+            className="flex lg:flex-row justify-center flex-wrap items-center"
           >
             {softSkills.map((el, i) => (
               <Skills data={el} key={i} />
@@ -83,11 +82,7 @@ function AboutPage() {
         ) : (
           <div
             id="1"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-            }}
+            className="flex lg:flex-row justify-center flex-wrap items-center"
           >
             {hardSkills.map((el, i) => (
               <Skills data={el} key={i} />
