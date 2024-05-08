@@ -46,12 +46,12 @@ function Home() {
               <Footer />
               <Button label={"See more about me"} />
               <a
+                target="_blank"
                 className="px-4 py-2.5 bg-slate-500 hover:bg-slate-400 text-white my-3 rounded-md"
-                href="/files/Anudari_cv.pdf"
-                download="Anudari_cv.pdf"
+                href="https://hrcvbucket.s3.eu-north-1.amazonaws.com/Anudari+CV.pdf"
               >
                 {" "}
-                Download My CV{" "}
+                Resume{" "}
               </a>
             </section>
           </motion.div>
